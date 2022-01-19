@@ -1,0 +1,22 @@
+Package: lefse
+Title: Phylogenetic and Functional Analyses for Ecology
+Version: 0.1.1
+Authors@R: 
+     c(
+    person(given = "Nathan G.",
+           family = "Swenson",
+           role = c("aut", "cre"),
+           email = c("nswenson@nd.edu", "swensonn@msu.edu")),
+   person(given = "Paul Efren",
+           family = "Santos Andrade",
+           role = c("ctb"),
+           email = "paulefrens@gmail.com",
+           comment = c(ORCID = "0000-0002-6635-0375")) )
+Description: Utilizing phylogenetic and functional information for the analyses of ecological datasets. The analyses include methods for quantifying the phylogenetic and functional diversity of assemblages.
+License: MIT + file LICENSE
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
