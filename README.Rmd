@@ -37,7 +37,15 @@ remotes::install_github("PaulESantos/lefse")
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-#library(lefse)
-## basic example code
+library(lefse)
+# data
+data("lefse_sample")
+data("lefse_traits")
+# Moments
+lefse::com.trait.moments(lefse_sample, lefse_traits)
+# 
+lefse::com.trait.weighted(lefse_sample, lefse_traits)
+#
+lefse::trait.range(lefse_sample, lefse_traits)
 ```
 
