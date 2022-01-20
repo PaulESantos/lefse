@@ -18,7 +18,7 @@ The goal of lefse is to …
 You can install the development version of lefse like so:
 
 ``` r
-remotes::install_github("PaulESantos/lefse)
+remotes::install_github("PaulESantos/lefse")
 ```
 
 ## Example

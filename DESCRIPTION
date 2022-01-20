@@ -6,7 +6,7 @@ Authors@R:
     person(given = "Nathan G.",
            family = "Swenson",
            role = c("aut", "cre"),
-           email = c("nswenson@nd.edu", "swensonn@msu.edu")),
+           email = "nswenson@nd.edu"),
    person(given = "Paul Efren",
            family = "Santos Andrade",
            role = c("ctb"),
@@ -20,3 +20,5 @@ Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
+Imports: 
+    lifecycle
