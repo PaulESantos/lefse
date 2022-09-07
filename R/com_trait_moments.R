@@ -18,7 +18,7 @@
 #' @author Nathan G. Swenson
 #'
 #' @importFrom stats sd var weighted.mean
-#' @return
+#' @return a data.frame
 #' @export
 #'
 #' @seealso \code{\link{com.trait.weighted}}

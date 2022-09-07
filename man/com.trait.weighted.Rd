@@ -12,7 +12,7 @@ com.trait.weighted(my.sample, traits)
 \item{traits}{A trait file with species names as row names and trait as columns.}
 }
 \value{
-
+a data.frame
 }
 \description{
 Quantifies the moments of the community trait distribution weighted by abundance
