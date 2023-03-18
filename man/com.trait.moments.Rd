@@ -17,7 +17,7 @@ com.trait.moments(my.sample, traits)
 -\code{ com.kurt } The kurtosis of the trait values in the community}
 }
 \value{
-
+a data.frame
 }
 \description{
 Quantifies the moments of the community trait distribution

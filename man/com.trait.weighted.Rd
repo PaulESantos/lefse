@@ -12,7 +12,7 @@ com.trait.weighted(my.sample, traits)
 \item{traits}{A trait file with species names as row names and trait as columns.}
 }
 \value{
-
+a data.frame
 }
 \description{
 Quantifies the moments of the community trait distribution weighted by abundance
@@ -25,6 +25,16 @@ Quantifies the moments of the community trait distribution weighted by abundance
 data("lefse_sample")
 data("lefse_traits")
 com.trait.weighted(lefse_sample, lefse_traits)
+# Sourse SDMTools package
+wt.var <- function(x,wt) {
+ s = which(is.finite(x + wt)); wt = wt[s]; x = x[s] #remove NA info
+ xbar = weighted.mean(x,wt) #get the weighted mean
+ return( sum(wt *(x-xbar)^2)*(sum(wt)/(sum(wt)^2-sum(wt^2))) ) #return the variance
+}
+
+wt.sd <- function(x,wt) {
+ return( sqrt(wt.var(x,wt)) ) #return the standard deviation
+}
 }
 \references{
 Swenson, N.G. 2014. Functional and Phylogenetic Ecology in R. Springer UseR! Series, Springer, New York, New York, U.S.A.

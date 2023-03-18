@@ -7,11 +7,13 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![CRAN
-status](https://www.r-pkg.org/badges/version/lefse)](https://CRAN.R-project.org/package=lefse)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/lefse)](https://cran.r-project.org/package=lefse)
 <!-- badges: end -->
 
-The goal of lefse is to …
+The goal of **lefse** is to utilizing phylogenetic and functional
+information for the analyses of ecological datasets. The analyses
+include methods for quantifying the phylogenetic and functional
+diversity of assemblages.
 
 ## Installation
 

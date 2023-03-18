@@ -14,7 +14,7 @@
 #' @author Nathan G. Swenson
 #'
 #' @importFrom stats sd var weighted.mean
-#' @return
+#' @return a data.frame
 #' @export
 #'
 #' @examples
@@ -27,16 +27,16 @@ com.trait.weighted <-
     mean.output = matrix(NA, nrow=nrow(my.sample), ncol=ncol(traits))
     sd.output = matrix(NA, nrow=nrow(my.sample), ncol=ncol(traits))
     ##################################
-    # Sourse SDMTools package
-    wt.var <- function(x,wt) {
-      s = which(is.finite(x + wt)); wt = wt[s]; x = x[s] #remove NA info
-      xbar = weighted.mean(x,wt) #get the weighted mean
-      return( sum(wt *(x-xbar)^2)*(sum(wt)/(sum(wt)^2-sum(wt^2))) ) #return the variance
-    }
-
-    wt.sd <- function(x,wt) {
-      return( sqrt(wt.var(x,wt)) ) #return the standard deviation
-    }
+    #'# Sourse SDMTools package
+    #'wt.var <- function(x,wt) {
+    #'  s = which(is.finite(x + wt)); wt = wt[s]; x = x[s] #remove NA info
+    #'  xbar = weighted.mean(x,wt) #get the weighted mean
+    #'  return( sum(wt *(x-xbar)^2)*(sum(wt)/(sum(wt)^2-sum(wt^2))) ) #return the variance
+    #'}
+#'
+    #'wt.sd <- function(x,wt) {
+    #'  return( sqrt(wt.var(x,wt)) ) #return the standard deviation
+    #'}
     ##################################
     ##################################
     for(i in 1:ncol(traits)){
