@@ -79,7 +79,11 @@ com.trait.moments <-
 
     output = cbind(mean.output, sd.output, skew.output, kurt.output)
 
-    colnames(output)=paste(c(rep("mean",ncol(traits)), rep("sd",ncol(traits)), rep("skew",ncol(traits)),rep( "kurtosis",ncol(traits)) ), rep(names(traits), 4), sep=".")
+    colnames(output)=paste(c(rep("mean",ncol(traits)),
+                             rep("sd",ncol(traits)),
+                             rep("skew",ncol(traits)),
+                             rep( "kurtosis",ncol(traits)) ),
+                           rep(names(traits), 4), sep=".")
     rownames(output) = rownames(my.sample)
     output
 
